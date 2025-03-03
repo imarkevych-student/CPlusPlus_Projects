@@ -1,9 +1,9 @@
-#include <iostream>
-using namespace std;
-
-
-int main()
-{
+//#include <iostream>
+//using namespace std;
+//
+//
+//int main()
+//{
     //operators 
     //унарні оператори  +5 -8
     //бінарні оператори + - * / %   2 + 2
@@ -154,7 +154,7 @@ int main()
         cout << "Error age" << endl;
     }
     */
-    int month;
+    /*int month;
     cout << "Enter number of month : ";
     cin >> month;
     if (month == 1)
@@ -182,10 +182,10 @@ int main()
         cout << "Error month" << endl;
         cout << "Error month" << endl;
         cout << "Error month" << endl;
-    }
+    }*/
     
      
 
 
-}
+//}
 
