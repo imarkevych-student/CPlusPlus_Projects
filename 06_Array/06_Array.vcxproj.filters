@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="03_SwitchEnum.cpp">
+    <ClCompile Include="D:\Downloads\06_Array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="03_Homework01.cpp">
+    <ClCompile Include="06_Classwork.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="03_Homework_02.cpp">
+    <ClCompile Include="06_Homework.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b479a94d-78e7-46f2-b852-35983afca050}</ProjectGuid>
-    <RootNamespace>My02LogicOperators</RootNamespace>
+    <ProjectGuid>{b45357a0-9af5-446c-ae64-eceb5dcc469d}</ProjectGuid>
+    <RootNamespace>My08Functions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="02_Homework.cpp" />
-    <ClCompile Include="02_LogicOperators.cpp" />
-    <ClCompile Include="C:\Users\imark_f02ge4r\OneDrive\Робочий стіл\CPlusPlus\02_LogicOperators\02_Classwork.cpp" />
+    <ClCompile Include="08_Classwork.cpp" />
+    <ClCompile Include="08_Functions.cpp" />
+    <ClCompile Include="08_Homework.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

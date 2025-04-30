@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="03_Homework01.cpp" />
+    <ClCompile Include="03_Homework_02.cpp" />
     <ClCompile Include="03_SwitchEnum.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -18,11 +18,16 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="06_Classwork.cpp" />
+    <ClCompile Include="06_Homework.cpp" />
+    <ClCompile Include="D:\Downloads\06_Array.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b479a94d-78e7-46f2-b852-35983afca050}</ProjectGuid>
-    <RootNamespace>My02LogicOperators</RootNamespace>
+    <ProjectGuid>{3316b62c-c945-490b-91df-788142c4b011}</ProjectGuid>
+    <RootNamespace>My06Array</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,11 +131,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="02_Homework.cpp" />
-    <ClCompile Include="02_LogicOperators.cpp" />
-    <ClCompile Include="C:\Users\imark_f02ge4r\OneDrive\Робочий стіл\CPlusPlus\02_LogicOperators\02_Classwork.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -21,5 +21,8 @@
     <ClCompile Include="C:\Users\imark_f02ge4r\OneDrive\Робочий стіл\CPlusPlus\02_LogicOperators\02_Classwork.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="02_Homework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
