@@ -1,20 +1,58 @@
-﻿// 31_Library.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+﻿#include"Library.h"
 
-#include <iostream>
-
+Library TestLibrary(Library& lib)//copy 
+{
+    Library temp = lib;
+    return temp;//copy
+}
+class Test
+{
+    //default constructor
+    //copy constructor
+    //destructor
+    //operator =
+};
 int main()
 {
-    std::cout << "Hello World!\n";
+    //Book book;
+    //book.ShowInfo();
+
+    Book book1("C++ for Begginers", "Stiven Prata", ComputerScience, 2000, 1500);
+    //Book book2("Harry Potter", "J.K.Rowling", Fantasy, 1997, 800);
+    //Book book3("Sherlock Holmes", "Arthur Conan Doyle",Genre::Fantasy, 1887, 2000);
+    //Book book4("Java for kids", "Morgan Nick",Genre::ComputerScience, 2015, 408);
+    //Book book5("Mowgli", "Pantera",Genre::Adventure, 1893, 500);
+    //Book book6("Financier", "Dreiser Theodore",Genre::ComputerScience, 1911, 377);
+
+    //book5.ShowInfo();
+
+    Library lib("Home Library");
+    lib.AddBook(book1);
+    lib.AddBook(Book("Harry Potter", "J.K.Rowling", Fantasy, 1997, 800));
+    lib.AddBook(Book("Sherlock Holmes", "Arthur Conan Doyle", Genre::Fantasy, 1887, 2000));
+    lib.AddBook(Book("Java for kids", "Morgan Nick", Genre::ComputerScience, 2015, 408));
+    lib.AddBook(Book("Mowgli", "Pantera", Genre::Adventure, 1893, 500));
+    lib.AddBook(Book("Financier", "Dreiser Theodore", Genre::ComputerScience, 1911, 377));
+
+    lib.Show();
+    cout << " -------------------Copy Library -------------------" << endl;
+    Library copy_library(lib);
+    copy_library.Show();
+
+    cout << " -------------------New Library -------------------" << endl;
+
+    Library newLib = TestLibrary(lib);
+    newLib.Show();
+    cout << " -------------------Lib 2 Library -------------------" << endl;
+
+    Library lib2 = lib;
+    lib2.Show();
+
+    int a = 5, b = 7, c = 12;
+    a = b = c;
+    Library lib3;
+    lib3 = lib2 = lib;
+
+
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
