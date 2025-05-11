@@ -1,29 +1,20 @@
 #include "Point.h"
+using namespace std;
 
-void Point::Print() const
-{
+Point::Point() : x(0), y(0) {}
+Point::Point(int x, int y) : x(x), y(y) {}
+
+Point& Point::operator++() { x++; y++; return *this; }
+Point& Point::operator--() { x--; y--; return *this; }
+
+bool Point::operator>(const Point& other) const {
+    return (x * x + y * y) > (other.x * other.x + other.y * other.y);
 }
 
-Point Point::operator++()
-{
-	this->x++;
-	this->y++;
-	return *this;
+bool Point::operator<(const Point& other) const {
+    return (x * x + y * y) < (other.x * other.x + other.y * other.y);
 }
 
-Point Point::operator--()
-{
-	this->x--;
-	this->y--;
-	return *this;
-}
+Point Point::operator!() const { return Point(-x, -y); }
 
-bool Point::operator>=(const Point& other)
-{
-	return (sqrt(x * x + y * y) >= sqrt(other.x * other.x + other.y * other.y));
-}
-
-bool Point::operator>=(const Point& other)
-{
-	return (sqrt(x * x + y * y) <= sqrt(other.x * other.x + other.y * other.y));
-}
+void Point::Print() const {cout << "(" << x << ", " << y << ")" << std::endl; }

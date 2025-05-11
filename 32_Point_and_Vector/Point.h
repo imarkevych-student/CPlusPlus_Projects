@@ -1,18 +1,18 @@
 #pragma once
-#include <cmath>
-class Point
-{
-	int x;
-	int y;
+#include <iostream>
+
+class Point {
 public:
-	void Print() const;
-	Point() :x(0), y(0) {}
-	Point(int x, int y) : x(x), y(y) {}
-	Point operator ++();
-	Point operator --();
-	bool operator >=(const Point& other);
-	bool operator <=(const Point& other);	
+    int x, y;
 
-	
+    Point(); 
+    Point(int x, int y); 
+
+    Point& operator++(); 
+    Point& operator--(); 
+    bool operator>(const Point& other) const;
+    bool operator<(const Point& other) const;
+    Point operator!() const;
+
+    void Print() const;
 };
-
