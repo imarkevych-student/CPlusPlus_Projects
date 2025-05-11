@@ -41,7 +41,7 @@ void Vector::Add(Point p) {
 }
 
 void Vector::Print() const {
-    cout << "Вектор містить " << countPoint << " точки:" << std::endl;
+    cout << "Вектор містить " << countPoint << " точки:" << endl;
     for (int i = 0; i < countPoint; ++i) {
         points[i].Print();
     }

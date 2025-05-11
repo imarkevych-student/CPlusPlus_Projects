@@ -17,4 +17,4 @@ bool Point::operator<(const Point& other) const {
 
 Point Point::operator!() const { return Point(-x, -y); }
 
-void Point::Print() const {cout << "(" << x << ", " << y << ")" << std::endl; }
+void Point::Print() const {cout << "(" << x << ", " << y << ")" << endl; }
